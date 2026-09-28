@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <!--
+      Favicon. Redrawn rather than scaled.
+
+      At 48px the 108-unit mark's tab is under 3px and the corner radii round
+      themselves away, leaving an ambiguous blob. So this is a separate cut: a
+      rounded badge with a bolder, simplified folder that fills the canvas. A
+      favicon also has to survive being shown at 16px in a tab strip, so there
+      is no detail that cannot be lost.
+    -->
+    <rect width="48" height="48" rx="11" fill="#2563EB" />
+    <path fill="#FFFFFF" d="
+        M12 15
+        H21
+        L24 18.5
+        H36
+        C37.1 18.5 38 19.4 38 20.5
+        V33
+        C38 34.1 37.1 35 36 35
+        H12
+        C10.9 35 10 34.1 10 33
+        V17
+        C10 15.9 10.9 15 12 15
+        Z" />
+</svg>

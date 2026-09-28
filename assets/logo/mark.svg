@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+    <!--
+      The File Manager mark, on transparency.
+
+      This is the Android adaptive-icon FOREGROUND layer. It must carry no
+      background: Android composites it over `adaptiveIcon.backgroundColor` from
+      app.json, and an opaque square here would cover that colour, defeat the
+      adaptive mask, and break the parallax the system applies to the two layers.
+
+      Geometry follows the original 108x108 draft. The folder spans x 21..87 and
+      y 32..80 after the 2-unit optical lift, which sits inside Android's
+      guaranteed-visible 72x72 zone (18..90) with margin for aggressive OEM
+      masks.
+    -->
+    <path fill="#FFFFFF" d="
+        M27 32
+        H45
+        L51 38
+        H81
+        C84.3 38 87 40.7 87 44
+        V74
+        C87 77.3 84.3 80 81 80
+        H27
+        C23.7 80 21 77.3 21 74
+        V38
+        C21 34.7 23.7 32 27 32
+        Z" />
+</svg>

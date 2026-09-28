@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+    <!--
+      Full-bleed variant, for the square app icon (iOS / Play / web manifest).
+
+      A background IS correct here — iOS applies its own mask on top — which is
+      the opposite requirement to the adaptive foreground. Two renditions of one
+      design exist for exactly this reason.
+    -->
+    <rect width="108" height="108" fill="#2563EB" />
+    <path fill="#FFFFFF" d="
+        M27 32
+        H45
+        L51 38
+        H81
+        C84.3 38 87 40.7 87 44
+        V74
+        C87 77.3 84.3 80 81 80
+        H27
+        C23.7 80 21 77.3 21 74
+        V38
+        C21 34.7 23.7 32 27 32
+        Z" />
+</svg>

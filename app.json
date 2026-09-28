@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "File Manager",
+    "slug": "fscore",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "fscore",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.fscore"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2563EB"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.fscore",
+      "permissions": [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-splash-screen",
+        {
+          "ios": {
+            "backgroundColor": "#f7f7f4",
+            "image": "./assets/splash-icon.png",
+            "resizeMode": "contain",
+            "dark": {
+              "backgroundColor": "#0F1824",
+              "image": "./assets/splash-icon.png",
+              "resizeMode": "contain"
+            }
+          },
+          "android": {
+            "backgroundColor": "#f7f7f4",
+            "image": "./assets/splash-icon.png",
+            "dark": {
+              "backgroundColor": "#0F1824",
+              "image": "./assets/splash-icon.png"
+            }
+          }
+        }
+      ]
+    ]
+  }
+}

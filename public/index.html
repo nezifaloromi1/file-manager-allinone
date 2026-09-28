@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <!--
+      This viewport works for phones with notches.
+      It's optimized for gestures by disabling global zoom.
+     -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover"
+    />
+    <title>%WEB_TITLE%</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+    <style>
+      /**
+       * Minimum styles required to render splash + theme variables.
+       *
+       * ALL OTHER STYLES BELONG IN `src/style.css`
+       */
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Liberation Sans', Helvetica,
+          Arial, sans-serif;
+        text-rendering: optimizeLegibility;
+        /* Platform-specific reset */
+        -webkit-overflow-scrolling: touch;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-overflow-style: scrollbar;
+        font-synthesis-weight: none;
+      }
+      :root {
+        --text: black;
+        --background: white;
+        --backgroundLight: #e2e7ee;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --text: white;
+          --background: black;
+          --backgroundLight: #232e3e;
+        }
+      }
+      html.theme--light,
+      html.theme--light body,
+      html.theme--light #root {
+        background-color: white;
+        --text: black;
+        --background: white;
+        --backgroundLight: #dce2ea;
+      }
+      html.theme--dark,
+      html.theme--dark body,
+      html.theme--dark #root {
+        color-scheme: dark;
+        background-color: black;
+        --text: white;
+        --background: black;
+        --backgroundLight: #232e3e;
+      }
+      html.theme--dim,
+      html.theme--dim body,
+      html.theme--dim #root {
+        color-scheme: dark;
+        background-color: #151d28;
+        --text: white;
+        --background: #151d28;
+        --backgroundLight: #2c3a4e;
+      }
+      #splash {
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      #splash svg {
+        position: relative;
+        top: -50px;
+        width: 100px;
+      }
+    </style>
+    <script>
+      const theme = localStorage.getItem('FLUX_THEME');
+      if (theme) {
+        document.documentElement.classList.add(`theme--${theme}`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- The root element for your Expo app. -->
+    <div id="splash">
+      <!-- Splash logo SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 57">
+        <path
+          fill="#006AFF"
+          d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+        />
+      </svg>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>

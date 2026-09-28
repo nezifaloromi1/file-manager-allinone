@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+    <!--
+      Splash mark, on transparency.
+
+      Deliberately NOT white. The splash background is #f7f7f4, and a white
+      folder on it measures 1.07:1 — technically rendered and practically
+      invisible. The accent sits at 4.39:1, which is the right choice for a mark
+      this size and ties the splash to the app's single accent rather than
+      inventing a second one.
+
+      Sized smaller than the launcher mark: `resizeMode: contain` fits this to
+      the screen, and a full-bleed-size mark would dominate the splash.
+    -->
+    <g transform="translate(54 54) scale(0.72) translate(-54 -54)">
+        <path fill="#D04200" d="
+            M27 32
+            H45
+            L51 38
+            H81
+            C84.3 38 87 40.7 87 44
+            V74
+            C87 77.3 84.3 80 81 80
+            H27
+            C23.7 80 21 77.3 21 74
+            V38
+            C21 34.7 23.7 32 27 32
+            Z" />
+    </g>
+</svg>
