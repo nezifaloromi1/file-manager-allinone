@@ -1,5 +1,12 @@
 # File Manager
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Expo](https://img.shields.io/badge/Expo-SDK%2054-000020.svg)](https://expo.dev)
+[![React Native](https://img.shields.io/badge/React%20Native-0.81-20232A.svg)](https://reactnative.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6.svg)](https://www.typescriptlang.org)
+[![Platforms](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-3DDC84.svg)]()
+[![Open Source](https://img.shields.io/badge/open%20source-MIT-brightgreen.svg)](LICENSE)
+
 A cross-platform file manager for Android, iOS, and web, built with Expo and React Native. Browse, organise, search, analyse, and reclaim storage from a single interface.
 
 ## Features
@@ -116,6 +123,6 @@ Contributions are welcome.
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE). You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies, provided the copyright notice and permission notice are retained.
 
 Copyright (c) 2026 mdnz
