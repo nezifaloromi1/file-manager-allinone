@@ -125,4 +125,4 @@ Contributions are welcome.
 
 Released under the [MIT License](LICENSE). You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies, provided the copyright notice and permission notice are retained.
 
-Copyright (c) 2026 mdnz
+Copyright (c) 2026 Nezif Mohammed 
